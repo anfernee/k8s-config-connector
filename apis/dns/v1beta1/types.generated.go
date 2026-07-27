@@ -116,6 +116,7 @@ type ManagedZoneCloudLoggingConfig struct {
 	// logging opt-in.
 	// +required
 	EnableLogging *bool `json:"enableLogging"`
+
 }
 
 /* found existing non-generated go type with openapi tag "ManagedZoneDnsSecConfig", skipping
@@ -142,6 +143,7 @@ type ManagedZoneForwardingConfig struct {
 	// name server if more than one target is given.
 	// +required
 	TargetNameServers []ManagedZoneForwardingConfigNameServerTarget `json:"targetNameServers"`
+
 }
 
 /* found existing non-generated go type with openapi tag "ManagedZoneForwardingConfigNameServerTarget", skipping
@@ -173,6 +175,7 @@ type ManagedZonePeeringConfig struct {
 	// The network with which to peer.
 	// +required
 	TargetNetwork *ManagedZonePeeringConfigTargetNetwork `json:"targetNetwork"`
+
 }
 
 /* found existing non-generated go type with openapi tag "ManagedZonePeeringConfigTargetNetwork", skipping
@@ -200,6 +203,7 @@ type ManagedZonePrivateVisibilityConfig struct {
 
 	// The list of VPC networks that can see this zone.
 	Networks []ManagedZonePrivateVisibilityConfigNetwork `json:"networks,omitempty"`
+
 }
 
 /* found existing non-generated go type with openapi tag "ManagedZonePrivateVisibilityConfigGKECluster", skipping
@@ -235,6 +239,7 @@ type ManagedZoneServiceDirectoryConfig struct {
 	// Contains information about the namespace associated with the zone.
 	// +required
 	Namespace *ManagedZoneServiceDirectoryConfigNamespace `json:"namespace"`
+
 }
 
 /* found existing non-generated go type with openapi tag "ManagedZoneServiceDirectoryConfigNamespace", skipping

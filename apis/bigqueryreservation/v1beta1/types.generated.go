@@ -22,6 +22,10 @@
 
 package v1beta1
 
+import (
+	common "github.com/GoogleCloudPlatform/k8s-config-connector/apis/common"
+)
+
 /* unreachable type Reservation_ReplicationStatus
 // +kcc:proto=google.cloud.bigquery.reservation.v1.Reservation.ReplicationStatus
 type Reservation_ReplicationStatus struct {

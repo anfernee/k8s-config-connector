@@ -271,8 +271,7 @@ func (a *dataflowFlexTemplateJobAdapter) Delete(ctx context.Context, deleteOp *d
 		time.Sleep(2 * time.Second)
 		latest, err := a.getJob(ctx, jobID)
 		if err != nil {
-			// TODO: not right!
-			return false, fmt.Errorf("getting state of job")
+			return false, fmt.Errorf("getting state of job %q: %w", jobFQN, err)
 		}
 		switch latest.CurrentState {
 		case pb.JobState_JOB_STATE_CANCELLED:
